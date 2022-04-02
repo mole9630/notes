@@ -9,11 +9,14 @@
 - Github:https://github.com/mole9630/
 - 更多关于我:https://www.mole9630.top/me/
 
+### 站点后续更新计划
+- [ ] 将现有的Github内的笔记转成Markdown添加至本站
+
 ### 其他课程笔记
 - C:https://github.com/mole9630/C-Study-notes
 - Java:https://github.com/mole9630/Java-Study-notes
 - Web:https://github.com/mole9630/Web-Study-notes
-- DataBase:[Github](https://github.com/mole9630/DB-Study-notes) | [本站](https://notes.mole9630.top/#/DataBase/1.database-basics)
+- DataBase:[本站](https://notes.mole9630.top/#/DataBase/1.database-basics) | [Github](https://github.com/mole9630/DB-Study-notes)
 
 #### DataBase目录
 - [一.数据库基础知识](/DataBase/1.database-basics)
