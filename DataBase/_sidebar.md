@@ -1,3 +1,7 @@
 - **章节**
-    - [一.数据库基础知识](DataBase/1.database-basics)
-    - [二.数据库基础知识](DataBase/2.database-creation-management)
+  - [一.数据库基础知识](/DataBase/1.database-basics)
+      - [- 数据库技术的发展](/DataBase/1.database-basics?id=数据库技术的发展)
+      - [- 数据库系统](/DataBase/1.database-basics?id=数据库系统)
+      - [- 数据模型](/DataBase/1.database-basics?id=数据模型)
+      - [- 关系数据库](/DataBase/1.database-basics?id=关系数据库)
+  - [二.数据库基础知识](/DataBase/2.database-creation-management)
