@@ -19,11 +19,27 @@
 - DataBase:[本站](https://notes.mole9630.top/#/DataBase/database_video_collection/1.database-basics) | [Github](https://github.com/mole9630/DB-Study-notes)
 
 #### DataBase目录
-- [一.数据库基础知识](/DataBase/database_video_collection/1.database-basics)
-  - [数据库技术的发展](/DataBase/database_video_collection/1.database-basics?id=数据库技术的发展)
-  - [数据库系统](/DataBase/database_video_collection/1.database-basics?id=数据库系统)
-  - [数据模型](/DataBase/database_video_collection/1.database-basics?id=数据模型)
-  - [关系数据库](/DataBase/database_video_collection/1.database-basics?id=关系数据库)
-  - [数据库的设计](/DataBase/database_video_collection/1.database-basics?id=数据库的设计)
-  - [专题总结](/DataBase/database_video_collection/1.database-basics?id=专题总结)
-- [二.数据库基础知识](/DataBase/2.database-creation-management)
+- 校内课程及数据库类课程集(北京师范大学,中南大学)笔记
+  - [一.数据库基础知识](/DataBase/database_video_collection/1.database-basics)
+    - [数据库技术的发展](/DataBase/database_video_collection/1.database-basics?id=数据库技术的发展)
+    - [数据库系统](/DataBase/database_video_collection/1.database-basics?id=数据库系统)
+    - [数据模型](/DataBase/database_video_collection/1.database-basics?id=数据模型)
+    - [关系数据库](/DataBase/database_video_collection/1.database-basics?id=关系数据库)
+    - [数据库的设计](/DataBase/database_video_collection/1.database-basics?id=数据库的设计)
+    - [专题总结](/DataBase/database_video_collection/1.database-basics?id=专题总结)
+  - [二.数据库基础知识](/DataBase/2.database-creation-management)
+
+#### Web目录
+- 校内课程笔记
+  - HTML基础
+    - [220308](/Web/school_notes/3m?id=_220308) | 基础标签及含义,样式图片及表单事件
+    - [220309](/Web/school_notes/3m?id=_220309) | span与div,样式,段落,超链接
+    - [220314](/Web/school_notes/3m?id=_220314) | 超链接,map图像热取链接,无序列表,有序列表,描述列表
+    - [220315](/Web/school_notes/3m?id=_220315) | table表格与form表单
+    - [220316](/Web/school_notes/3m?id=_220316) | 登录与注册表单,各类input的功能,select单/多选菜单
+    - [220321](/Web/school_notes/3m?id=_220321) | frameset框架集,特殊转义字符
+    - [220322](/Web/school_notes/3m?id=_220322) | 实训-编写简单的新闻网站
+  - CSS基础
+    - [220323](/Web/school_notes/3m?id=_220323) | 导入CSS的方式,元素选择器,通配符选择器,属性选择器
+    - [220328](/Web/school_notes/3m?id=_220328) | 选择器(后代,子元素,兄弟,ID,类),伪元素选择器(修改xx行,在后添加一个图片),伪类选择器(超链接各状态,首字,lang属性选择器)
+    - [220329](/Web/school_notes/3m?id=_220329) | CSS属性(颜色 图片 重复 是否固定 位置),CSS字体属性(定义字体的样式 变形 是否加粗 字体大小 字体)
