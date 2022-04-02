@@ -21,6 +21,6 @@
   - [数据库系统](/DataBase/1.database-basics?id=数据库系统)
   - [数据模型](/DataBase/1.database-basics?id=数据模型)
   - [关系数据库](/DataBase/1.database-basics?id=关系数据库)
-  - [- 数据库的设计](/DataBase/1.database-basics?id=数据库的设计)
-  - [- 专题总结](/DataBase/1.database-basics?id=专题总结)
+  - [数据库的设计](/DataBase/1.database-basics?id=数据库的设计)
+  - [专题总结](/DataBase/1.database-basics?id=专题总结)
 - [二.数据库基础知识](/DataBase/2.database-creation-management)
