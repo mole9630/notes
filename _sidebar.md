@@ -4,6 +4,8 @@
 - **课程及目录**
     - [DataBase(DB)](/DataBase/)
       - [校内课程及数据库类课程集](/DataBase/database_video_collection/1.database-basics)
+        - [一.数据库基础知识](/DataBase/database_video_collection/1.database-basics)
+        - [二.数据库基础知识](/DataBase/database_video_collection/2.database-creation-management)
     - [Web](/Web/)
       - 校内课程
         - [3月](/Web/school_notes/3m?id=_220308)

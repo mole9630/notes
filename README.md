@@ -11,7 +11,7 @@
 
 ### 站点后续更新计划
 - [ ] 将现有的Github内的笔记转成Markdown添加至本站
-  - [ ] Web课程笔记移植
+  - [x] Web课程笔记移植
   - [ ] Java课程笔记移植
   - [ ] C课程笔记移植 
 
@@ -19,19 +19,22 @@
 - C:https://github.com/mole9630/C-Study-notes
 - Java:https://github.com/mole9630/Java-Study-notes
 - Web:https://github.com/mole9630/Web-Study-notes
-- DataBase:[本站](https://notes.mole9630.top/#/DataBase/database_video_collection/1.database-basics) | [Github](https://github.com/mole9630/DB-Study-notes)
+- DataBase:[本站](/DateBase/database_video_collection/1.database-basics) | [Github](https://github.com/mole9630/DB-Study-notes)
 
 #### DataBase目录
 - 校内课程及数据库类课程集(北京师范大学,中南大学)笔记
   - [一.数据库基础知识](/DataBase/database_video_collection/1.database-basics)
-    - [数据库技术的发展](/DataBase/database_video_collection/1.database-basics?id=数据库技术的发展)
-    - [数据库系统](/DataBase/database_video_collection/1.database-basics?id=数据库系统)
-    - [数据模型](/DataBase/database_video_collection/1.database-basics?id=数据模型)
-    - [关系数据库](/DataBase/database_video_collection/1.database-basics?id=关系数据库)
-    - [数据库的设计](/DataBase/database_video_collection/1.database-basics?id=数据库的设计)
-    - [专题总结](/DataBase/database_video_collection/1.database-basics?id=专题总结)
-  - [二.数据库基础知识](/DataBase/2.database-creation-management)
-
+      - [数据库技术的发展](/DataBase/database_video_collection/1.database-basics?id=数据库技术的发展)
+      - [数据库系统](/DataBase/database_video_collection/1.database-basics?id=数据库系统)
+      - [数据模型](/DataBase/database_video_collection/1.database-basics?id=数据模型)
+      - [关系数据库](/DataBase/database_video_collection/1.database-basics?id=关系数据库)
+      - [数据库的设计](/DataBase/database_video_collection/1.database-basics?id=数据库的设计)
+      - [专题总结](/DataBase/database_video_collection/1.database-basics?id=专题总结)
+  - [二.数据库基础知识](/DataBase/database_video_collection/2.database-creation-management)
+      - [创建数据库](/DataBase/database_video_collection/2.database-creation-management?id=创建数据库)
+      - [数据类型](/DataBase/database_video_collection/2.database-creation-management?id=数据类型)
+      - [创建数据表](/DataBase/database_video_collection/2.database-creation-management?id=创建数据表)
+      - [修改数据表](/DataBase/database_video_collection/2.database-creation-management?id=修改数据表)
 #### Web目录
 - 校内课程笔记
   - HTML基础
@@ -46,3 +49,4 @@
     - [220323](/Web/school_notes/3m?id=_220323) | 导入CSS的方式,元素选择器,通配符选择器,属性选择器
     - [220328](/Web/school_notes/3m?id=_220328) | 选择器(后代,子元素,兄弟,ID,类),伪元素选择器(修改xx行,在后添加一个图片),伪类选择器(超链接各状态,首字,lang属性选择器)
     - [220329](/Web/school_notes/3m?id=_220329) | CSS属性(颜色 图片 重复 是否固定 位置),CSS字体属性(定义字体的样式 变形 是否加粗 字体大小 字体)
+    - [220330](/Web/school_notes/3m?id=_220330) | 文字属性(颜色,边框,行高,对齐方式,上下框线,删除线,闪烁效果,缩进,阴影,单词字母/首字母大写,字母小写,保留原格式,不会随浏览器窗口大小自动换行,定义单词之间的间距(通常只对西文有效,且是单词间隔),定义字符之间的间距(对所有字符有效)),大小属性(定义最大宽度为50像素,定义最小高度为50像素,定义宽度和高度都为50像素,定义宽度和高度都为原来的50%)
