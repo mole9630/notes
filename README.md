@@ -11,6 +11,9 @@
 
 ### 站点后续更新计划
 - [ ] 将现有的Github内的笔记转成Markdown添加至本站
+  - [ ] Web课程笔记移植
+  - [ ] Java课程笔记移植
+  - [ ] C课程笔记移植 
 
 ### 其他课程笔记
 - C:https://github.com/mole9630/C-Study-notes

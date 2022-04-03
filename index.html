@@ -32,7 +32,28 @@
       fontsize:'0.9em',
       color:'rgb(90,90,90)',
       language:'chinese'
-    }
+      },
+      //页脚
+      plugins: [
+      function(hook) {
+      var footer = [
+        '<hr/>',
+        '<footer>',
+        '<span>COPYRIGHT © 2021 - 2022 <a href="https://www.mole9630.top">摩尔</a>.</span><br />',
+        '<img style="width: 20px;height: 20px" src="//static.hdslb.com/images/base/beiantubiao.png" alt="备案标识" />',
+        '<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=34060002050061" target="_blank" rel="nofollow noopener noreferrer">皖公网安备 34060002050061号</a>',
+        '<a href="http://beian.miit.gov.cn" target="_blank" rel="nofollow noopener noreferrer"></a>',
+        ' || ',
+        '<a href="http://beian.miit.gov.cn" target="_blank" rel="nofollow noopener noreferrer">皖ICP备19014423号</a>',
+
+        '</footer>'
+      ].join('');
+      hook.afterEach(function(html) {
+        return html + footer;
+      });
+      }
+      ]
+
     }
   </script>
   <!-- Docsify v4 -->
