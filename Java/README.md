@@ -1,19 +1,14 @@
-# Web笔记本
+# Java笔记本
 
 ## 课程及笔记目录
 ### 校内课程
-> 校内课程课上笔记
+- [Github](https://github.com/mole9630/Java-Study-notes)
 
-- HTML基础
-  - [220308](/Web/school_notes/3m?id=_220308) | 基础标签及含义,样式图片及表单事件
-  - [220309](/Web/school_notes/3m?id=_220309) | span与div,样式,段落,超链接
-  - [220314](/Web/school_notes/3m?id=_220314) | 超链接,map图像热取链接,无序列表,有序列表,描述列表
-  - [220315](/Web/school_notes/3m?id=_220315) | table表格与form表单
-  - [220316](/Web/school_notes/3m?id=_220316) | 登录与注册表单,各类input的功能,select单/多选菜单
-  - [220321](/Web/school_notes/3m?id=_220321) | frameset框架集,特殊转义字符
-  - [220322](/Web/school_notes/3m?id=_220322) | 实训-编写简单的新闻网站
-- CSS基础
-  - [220323](/Web/school_notes/3m?id=_220323) | 导入CSS的方式,元素选择器,通配符选择器,属性选择器
-  - [220328](/Web/school_notes/3m?id=_220328) | 选择器(后代,子元素,兄弟,ID,类),伪元素选择器(修改xx行,在后添加一个图片),伪类选择器(超链接各状态,首字,lang属性选择器)
-  - [220329](/Web/school_notes/3m?id=_220329) | CSS属性(颜色 图片 重复 是否固定 位置),CSS字体属性(定义字体的样式 变形 是否加粗 字体大小 字体)
-  - [220330](/Web/school_notes/3m?id=_220330) | 文字属性(颜色,边框,行高,对齐方式,上下框线,删除线,闪烁效果,缩进,阴影,单词字母/首字母大写,字母小写,保留原格式,不会随浏览器窗口大小自动换行,定义单词之间的间距(通常只对西文有效,且是单词间隔),定义字符之间的间距(对所有字符有效)),大小属性(定义最大宽度为50像素,定义最小高度为50像素,定义宽度和高度都为50像素,定义宽度和高度都为原来的50%)
+### 零基础学Java语言(浙江大学-翁恺)
+- [Github](https://github.com/mole9630/Java-Study-notes)
+
+### Java程序设计(北京大学-堂大壮)
+- [第1讲 Java语言与面向对象的程序设计](/Java/PKU/Chapter1)
+  - [1.1 Java历史与发展](/Java/PKU/Chapter1?id=_11-java历史与发展)
+  - [1.2 Java语言的特点:C++--](/Java/PKU/Chapter1?id=_12-java语言的特点c-)
+  - [1.3 Java运行机制:跨平台的原因](/Java/PKU/Chapter1?id=_13-java运行机制跨平台的原因)
