@@ -2,11 +2,14 @@
     - [关于](/?id=%e5%85%b3%e4%ba%8e)
     - [其他课程笔记](/?id=%e5%85%b6%e4%bb%96%e8%af%be%e7%a8%8b%e7%ac%94%e8%ae%b0)
 - **课程及目录**
-    - [DataBase(DB)](/DataBase/)
-      - [校内课程及数据库类课程集](/DataBase/database_video_collection/1.database-basics)
-        - [一.数据库基础知识](/DataBase/database_video_collection/1.database-basics)
-        - [二.数据库基础知识](/DataBase/database_video_collection/2.database-creation-management)
     - [Web](/Web/)
       - 校内课程
         - [3月](/Web/school_notes/3m?id=_220308)
         - [4月](/Web/school_notes/3m?id=_220308)
+    - [Java](/Java/)
+      - Java程序设计(北京大学-堂大壮)
+        - [第1讲 Java语言与面向对象的程序设计](/Java/PKU/Chapter1)
+    - [DataBase(DB)](/DataBase/)
+      - [校内课程及数据库类课程集](/DataBase/database_video_collection/1.database-basics)
+        - [一.数据库基础知识](/DataBase/database_video_collection/1.database-basics)
+        - [二.数据库基础知识](/DataBase/database_video_collection/2.database-creation-management)
