@@ -129,4 +129,252 @@
     - `foo(new Teacher());`
 
 **面向对象设计思想的要点**
-- 认为客观世界由
+- 认为客观世界由各种对象组成
+- 程序的分析和设计都围绕着
+  - 有哪些对象类
+  - 每个类有哪些属性,哪些方法
+  - 类之间的关系(继承,关联等)
+  - 对象之间发送消息(调用方法)
+
+### 2.1 Java程序的类型:Java程序的类型及构成
+**Application**
+- HelloWorld.java
+  ```java
+  public class HelloWorldApp {
+    public static void main(String[] args) {
+      System.out.println("Hello World!");
+    }
+  }
+  ```
+- 要点
+  - class是主体
+  - public类名与文件同名
+  - main()的写法是固定的
+  - System.out.print 及 println 及 printf
+
+**Applet程序**
+- HelloWorldApplet.java
+  ```java
+  import java.awt.*;
+  import java.applet.*;
+  import javax.swing.*;
+  public class HelloWorldApplet extends JApplet {
+    public void paint(Graphics g) {
+      g.drawString("Hello World!",20,20);
+    }
+  }
+  ```
+- 要点
+  - import表示导入
+  - extends JApplet表示继承
+    - Applet或JApplet都可以
+  - 有paint()方法,表示如何绘制
+  - 没有main()方法
+
+**Java程序的基本构成**
+- HelloDate.java
+  ```java
+  package edu.pku.tds.ch02;
+  package java.util.*;
+  public class HelloDate{
+- package 语句(0或1句)
+- import 语句(0或多句)
+  - 导入其他类的类库
+- 类定义-class(1或多个)
+  - 一个文件只能由一个public类(与文件同名)
+- 类=类头+类体
+- 类成员=字段(field)+方法(method)
+  - 字段(field,属性,变量) 方法(method,函数)
+- 方法=方法头+方法体
+
+### 2.1 开发Java 程序的基本步骤:程序的编译与运行
+**程序的编辑,编译与运行**
+- 源程序编辑
+  - 可用任一文本编辑器
+- 程序编译
+   - 使用JDK中的`javac`工具
+- 程序运行
+  - 使用`java`工具
+
+**Application的编辑,编译与运行**
+ - 程序编辑:编辑器-文件名要与public class的类名一致
+   - 区分大小写
+ - 程序编译-转换为字节码(bytecode)文件,扩展名.class
+   - (.class文件中包括java虚拟机的指令)
+   - 编译可以使用JDK工具java.exe
+   - 如 javac Hello.java
+- 程序的运行-执行.class文件中的指令的过程
+  - 如 java Hello
+  - (注意:不要写成java Hello.class,因为这里需要的是类名,不是文件名)
+
+**使用package时的编译**
+- 文件及路径一致
+- 程序中使用package语句
+- 使用import语句
+
+**其他几个工具**
+- 主要的工具
+  - javac 编译
+  - java 运行
+  - javaw 运行图像界面程序
+  - appletViewer运行applet程序
+- 另外常用的几个工具
+  - jar 打包工具
+  - javadoc 生成文档
+  - javap 查看类信息及反汇编
+
+### 3.1 基本输入输出编程:文本界面的输入与输出
+**输入与输出**
+- 应用程序(Java Application)的输入输出可以是文本界面,也可以是图形界面
+- 小程序(Java Applet)则只能是图形界面
+- 每种界面都可以有输入和输出
+
+**文本界面:使用Scanner类**
+- 使用java.util.Scanner类
+  - 用其nextInt()方法
+  - 还有nextDouble()
+  - next()得到下一个单词
+  - 注:Since JDK1.5
+- ScannerTest.java
+  ```java
+  import java.util.Scanner;
+  class ScannerTest{
+    public static void main(String[] args){
+      Scanner in = new Scanner(System.in);
+      System.out.print("Enter an integer: ");
+      int i = in.nextInt();
+      System.out.println("You entered: " + i);
+    }
+  }
+  ```
+
+  **文本界面:使用in及out**
+  - java.io包
+  - System.in.read()
+  - System.out.print()及printf,println(类似于CC语言)
+  - AppCharInOut.java
+      ```java
+      char c = ' ';
+      System.out.print("Enter a char: ");
+      try{
+        c = (char)System.in.read();
+        }catch(IOException e){
+          System.out.println("You have entered: " + e);
+        }
+  - AppLineInOut.java
+    - 输入输出行
+    - 更复杂一些
+    ```java
+    try{
+      BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+      s = in.readLine();
+      }catch(IOException e){}
+  - AppNumInOut.java
+    - 输入输出数字
+    - 用Integer.parseInt(s);
+    - 用Double.parseDouble(s);
+    ```java
+    BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+    System.out.print("Enter a number: ");
+    s = in.readLine();
+    n = Integer.parseInt(s);
+    ```
+
+### 3.2 基本输入输出编程:图形界面的输入与输出
+**图形界面输入与输出**
+- 在图形界面下,可以:
+  - 使用文本框对象(TextField)获取用户输入的数据
+  - 使用标签对象(Label)或文本框输出数据
+  - 使用命令按钮(Button)来执行命令
+
+**Java Application图形界面输入与输出**
+- Java Application需要首先创建自己的图形界面
+- AppGraphInOut.java
+- 通过创建一个Frame创建自己的用户界面,在构建AppFrame时,设定该Frame的大小,并用setVisible(true)方法显示出来
+- 示例:AppGraphInOut.java
+  - add(xxx)加入对象
+  - btn.addActionListener:处理事件
+  - actionPerformed()函数:具体处理事件
+  ```java
+  setLayout(new FlowLayout());
+  add(in);
+  add(btn);
+  add(out);
+  btn.addActionListener(new BtnActionAdapter());
+  class BtnActionAdapter implements ActionListener{
+    public void actionPerformed(ActionEvent e){
+      String s = in.getText();
+      double d = Double.parseDouble(s);
+      double sq = Math.sqrt(d);
+      out.setText(d + "的平方根是:" + sq);
+    }
+  }
+  ```
+
+**事件处理**
+- 在Java8中可简写为:e->{...}
+- AppGraphInOut8.java
+    ```java
+    btn.addActionListener(e->{
+      String s = in.getText();
+      double d = Double.parseDouble(s);
+      double sq = Math.sqrt(d);
+      out.setText(d + "的平方根是:" + sq);
+    });
+    ```
+
+### 3.1.1 数据类型,变量与常量
+**数据类型决定数据的存储方式和运算方式**
+- Java中的数据类型分为两大类
+  - 基本数据类型(Primitive types)
+  - 引用类型(reference types)
+- 数据类型
+  - 基本数据类型
+    - 数值型
+      - 整数类型(byte,short,int,long)
+      - 浮点类型(float,double)
+    - 字符型(char)
+    - 布尔型(boolean)
+  - 引用数据类型
+    - 类(class)
+    - 接口(interface)
+    - 数组
+
+**两种类型的差别**
+- 基本类型:变量在栈,在`这里`
+- 引用类型:变量引用到堆,在`那里`
+  - double d = 3;
+  - Person p = new Person();
+- 赋值时
+  - double d2 = d; 复制的是`值`
+  - Person p2 = p; 复制的是`引用`
+
+**Java基本数据类型**
+- Java中定义了四类/八种基本数据类型
+  - 整数型:byte(1字节),short(2字节),int(4字节),long(8字节)
+  - 浮点型:float,double
+  - 逻辑型:boolean
+  - 字符型:char
+
+**逻辑型**
+- boolean类型适于逻辑运算,一般用于程序流程控制
+- boolean类型数据只允许取值true或false
+  - 不可以0或非0的整数代替true和false
+  - **if(a=5)在java中是不允许的**
+- 用法举例
+    ```java
+    boonlean b = false;
+    if(b == true)
+    {
+      //do something
+    }
+
+**字符型**
+- char型数据用来表示通常意义上的"字符"
+- 字符常量是用单引号括起来的单个字符
+  - `char c = 'A'`
+- **Java字符采用Unicode编码,每个字符占两个字节**
+  - 可用十六进制编码形式表示
+  - `char c1 = '\u0061';`
+- Java语言中还允许使用转义字符"`\`"来将其后的字符转变为其他的含义
+  - `char c2 = '\n'; //代表换行符`
