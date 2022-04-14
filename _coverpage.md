@@ -4,9 +4,7 @@
 
 > 一个杂乱无章的私有笔记站点。
 
-- Database
-- 
-- 
+- Java | Web | Database
 
 [GitHub](https://github.com/mole9630/)
 [开始](/?id=摩尔的笔记本)

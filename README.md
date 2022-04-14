@@ -17,8 +17,8 @@
 
 ### 其他课程笔记
 - C:https://github.com/mole9630/C-Study-notes
-- Java:https://github.com/mole9630/Java-Study-notes
-- Web:https://github.com/mole9630/Web-Study-notes
+- Java:[本站](Java/) | https://github.com/mole9630/Java-Study-notes
+- Web:[本站](Web/) | https://github.com/mole9630/Web-Study-notes
 - DataBase:[本站](/DateBase/database_video_collection/1.database-basics) | [Github](https://github.com/mole9630/DB-Study-notes)
 
 #### Java目录
@@ -28,7 +28,7 @@
 - 零基础学Java语言(浙江大学-翁恺)
   - [Github](https://github.com/mole9630/Java-Study-notes)
 
-- Java程序设计(北京大学-堂大壮)
+- Java程序设计(北京大学-唐大壮)
   - [第1讲 Java语言与面向对象的程序设计](/Java/PKU/Chapter1)
 
 #### Web目录
