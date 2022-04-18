@@ -1,4 +1,4 @@
-### 1.1 Java历史与发展
+v### 1.1 Java历史与发展
 **Java三大平台**
 - Java SE标准版
 - Java EE企业版
@@ -608,5 +608,157 @@ public class Test{
 
 **程序的注释**
 - Java中可以采用三种注释方式:
-- //用于单行注释.注释从//开始,终止于行尾
-- 
+- `//`用于单行注释.注释从`//`开始,终止于行尾
+- `/*...*/`用于多行注释.注释从`/*`开始,终止于`*/`,且这种注释不能互相嵌套
+- `/**...*/`是Java所特有的doc注释.它以`/**`开始,终止于`*/`
+
+**JavaDoc**
+- 其中,第3种注释主要是为JDK的工具javadoc而采用的.javadoc能识别注释中用标记@标识的一些特殊变量,并把doc注释加入它所生成的HTML文件.常用@标记如下：
+  - @see:引用其他的类
+  - @version:版本信息
+  - @author:作者信息
+  - @param:参数名信息
+  - @return:说明
+  - @exception:异常说明
+  - 对于有@标记的注释,javadoc在生成有关程序的文档时,会自动地识别它们,并生成相应的文档
+  - 如 生成:javadoc HelloDate.java
+
+### 3.3.2 流程控制语句:分支语句-if及switch
+**分支语句-if**
+```java
+if //条件表达式
+{
+  //语句块
+}
+else
+{
+  //语句块
+}
+```
+
+**例:LeapYear.java**
+```java
+int year = 2003;
+if(year%4==0 && year%100!=0 || year%400==0)
+{
+  System.out.println(year+"if a leap year!");
+}
+else
+{
+  System.out.println(year+"not a leap year!");
+}
+```
+
+**分支语句-switch语句**
+- 使用switch要注意:
+  - 变量类型是整数,字符,字符串(String)
+  - case后面是常量
+  - 注意break
+  - 大致结构
+      ```java
+      switch(exp){
+        case const1:
+          statement1;
+          break;
+        case const2:
+          statement2;
+          break;
+        ...
+        case constN;
+        statementN;
+        break;
+        [default:
+          statement_default;
+          break;]
+      }
+      ```
+  - 例:GreadLevel.java分数等级
+      ```java
+      char grade = 'c';
+      switch(grade){
+        case 'A':
+          System.out.println(grade + "is 85~100");
+          break;
+        case 'B':
+          System.out.println(grade + "is 70~84");
+          break;
+        case `C`:
+          System.out.println(grade + "is 60~69");
+          break;
+        case 'D':
+          System.out.println(grade + "is <60");
+          break;
+        default:
+          System.out.println("invalid grade");
+      }
+      ```
+
+### 3.3.4 流程控制语句:循环语句
+**循环语句**
+- 循环语句功能
+  - 在循环条件满足的情况下,反复执行特定代码
+- 循环的五个要素
+  - 初始化部分(init_statement)
+  - 循环条件部分(test_exp)
+  - 循环体部分(body_statement)
+  - 迭代部分(after_statement)
+  - 结束后处理
+
+**循环语句的三种写法**
+![循环语句的三种写法](../../img/Java/PKU/593585D5F55849E40A25DEC36AF48B67.png)
+
+**for循环语句**
+- 语法格式
+    ```java
+    for(init_statement;test_exp;after_statement){
+      body_statement;
+    }
+    ```
+- 应用举例
+    ```java
+    int result = 0;
+    for(int i=1;i<100;i++)
+    {
+      result = result + i;
+    }
+    System.out.println("result=" + result);
+
+**while循环语句**
+- 语法格式
+    ```java
+    [init_statement]
+    while(test_exp){
+      body_statement;
+      [after_statement;]
+    }
+    ```
+- 应用举例
+    ```java
+    int result = 0;
+    int i = 1;
+    while(i<100)
+    {
+      result = result + i;
+      i++;
+    }
+    System.out.println("result=" + result);
+    ```
+
+**do-while循环语句**
+- 语法格式
+    ```java
+    [init_statement]
+    do{
+      body_statement;
+      [after_statement;]
+    }while(test_exp);
+    ```
+- 应用举例
+    ```java
+    int result = 0,int i = 1;
+    do{
+      result += i;
+      i++;
+    }while(i<100);
+    System.out.println("result=" + result);
+    ```
