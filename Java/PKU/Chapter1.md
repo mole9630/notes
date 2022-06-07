@@ -1,4 +1,4 @@
-v### 1.1 Java历史与发展
+### 1.1 Java历史与发展
 **Java三大平台**
 - Java SE标准版
 - Java EE企业版
